@@ -1,0 +1,35 @@
+# PDF to Markdown Converter - 依赖包列表
+
+# Web框架
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+aiofiles>=23.2.1
+
+# PDF处理
+PyMuPDF>=1.23.0
+
+# 图像处理
+Pillow>=10.0.0
+opencv-python>=4.8.0
+
+# 深度学习框架
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.35.0
+einops>=0.7.0
+protobuf>=3.20.0
+sentencepiece>=0.1.99
+
+# 数据处理
+numpy>=1.24.0
+
+# 工具库
+python-dotenv>=1.0.0
+
+# 注意事项:
+# 1. 本项目需要 Python 3.10 或更高版本
+# 2. 如果使用GPU，需要确保CUDA已正确安装
+# 3. PaddleOCR-VL模型需要单独下载到 models/paddleocr-vl 目录
+# 4. 推荐使用虚拟环境进行安装
+

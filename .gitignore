@@ -1,0 +1,64 @@
+# Temp目录 - 包含测试文件、开发文档和安装包
+temp/
+
+# 模型文件（太大无法上传到GitHub，需要单独下载）
+models/paddleocr-vl/*.safetensors
+models/paddleocr-vl/model.safetensors
+models/paddleocr-vl/PP-DocLayoutV2/*.pdiparams
+models/paddleocr-vl/PP-DocLayoutV2/*.pdmodel
+
+# Python缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 模型文件（如果很大，建议使用Git LFS或不提交）
+# models/
+
+# 上传文件和输出
+pdf-to-md-converter/uploads/*.pdf
+pdf-to-md-converter/outputs/*/
+
+# 进程文件
+*.pid
+
+# 环境变量
+.env
+.env.local
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 测试覆盖率
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+
+# 构建产物
+dist/
+build/
+*.egg-info/
+

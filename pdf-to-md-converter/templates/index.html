@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to Markdown Converter - 文档转换工具</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1>📄 PDF to Markdown Converter</h1>
+            <p>基于 PaddleOCR-VL-0.9B 的智能文档转换工具</p>
+        </header>
+
+        <!-- 主卡片 -->
+        <div class="main-card">
+            <!-- 上传区域 -->
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📤</div>
+                <h3>拖拽PDF文件到这里，或点击选择文件</h3>
+                <p>支持的格式: PDF</p>
+                <input type="file" id="fileInput" accept=".pdf" style="display: none;">
+            </div>
+
+            <!-- 文件信息 -->
+            <div class="file-info hidden" id="fileInfo">
+                <p><strong>文件名:</strong> <span id="fileName"></span></p>
+                <p><strong>大小:</strong> <span id="fileSize"></span></p>
+                <button class="btn" id="uploadBtn" disabled>开始转换</button>
+            </div>
+
+            <!-- 进度区域 -->
+            <div class="progress-section hidden" id="progressSection">
+                <h3>处理进度</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill">0%</div>
+                </div>
+                <p class="progress-message" id="progressMessage">准备中...</p>
+                
+                <!-- 详细日志 -->
+                <div class="progress-logs">
+                    <h4>处理日志:</h4>
+                    <div class="log-container" id="logContainer">
+                        <div class="log-entry">等待开始...</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 错误提示 -->
+            <div class="error-message hidden" id="errorMessage"></div>
+        </div>
+
+        <!-- 结果区域 -->
+        <div class="main-card result-section hidden" id="resultSection">
+            <div class="result-header">
+                <h2>✅ 转换完成</h2>
+            </div>
+
+            <!-- 统计信息 -->
+            <div class="result-stats">
+                <div class="stat-card">
+                    <div class="stat-value" id="totalPages">-</div>
+                    <div class="stat-label">总页数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="successPages">-</div>
+                    <div class="stat-label">成功处理</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="totalChars">-</div>
+                    <div class="stat-label">识别字符数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="successRate">-</div>
+                    <div class="stat-label">成功率</div>
+                </div>
+            </div>
+
+            <!-- 下载按钮 -->
+            <div class="download-buttons">
+                <button class="btn btn-success" id="downloadMd">
+                    📥 下载 Markdown 文档
+                </button>
+            </div>
+
+            <!-- Markdown预览 -->
+            <div class="preview-section">
+                <h3>📝 Markdown 预览</h3>
+                <div class="preview-content" id="markdownPreview">
+                    加载中...
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>PDF to Markdown Converter v1.0.0</p>
+            <p>基于 PaddleOCR-VL-0.9B | 完全本地运行 | 数据安全</p>
+        </footer>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
+
