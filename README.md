@@ -1,11 +1,11 @@
-# 1102case 项目目录
+# PDF2MD-V2
 
-PaddleOCR-VL 文档转换系统的本地部署项目
+基于 PaddleOCR-VL 的智能 PDF 转 Markdown 文档转换系统
 
 ## 📁 目录结构
 
 ```
-/personal/1102case/
+pdf2md-v2/
 ├── pdf-to-md-converter/    # 主项目：PDF转Markdown转换器
 │   ├── app.py             # FastAPI Web应用
 │   ├── converter/         # 核心转换模块
@@ -106,9 +106,9 @@ bash restart.sh
 ## 📝 相关文档
 
 - [项目完整文档](pdf-to-md-converter/README.md)
-- [使用示例](pdf-to-md-converter/USAGE_EXAMPLES.md)
-- [部署规划](PaddleOCR本地部署规划.md)
-- [部署总结](部署完成总结.md)
+- [快速开始指南](pdf-to-md-converter/QUICKSTART.md)
+- [变更日志](pdf-to-md-converter/CHANGELOG.md)
+- [脚本说明](pdf-to-md-converter/SCRIPTS_README.md)
 
 ## 🗑️ 清理说明
 
