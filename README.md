@@ -1,6 +1,24 @@
-# PDF2MD-V2
+<div align="center">
 
-基于 PaddleOCR-VL 的智能 PDF 转 Markdown 文档转换系统
+# 📄 PDF2MD-V2
+
+**基于 PaddleOCR-VL 的智能 PDF 转 Markdown 文档转换系统**
+
+[![Python Version](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-00a393.svg)](https://fastapi.tiangolo.com/)
+[![PaddleOCR](https://img.shields.io/badge/PaddleOCR--VL-0.9B-orange.svg)](https://github.com/PaddlePaddle/PaddleOCR)
+[![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/Coldplay-now/pdf2md-v2?style=social)](https://github.com/Coldplay-now/pdf2md-v2/stargazers)
+
+[功能特性](#-核心功能) • [快速开始](#-快速开始) • [安装部署](#️-首次使用下载模型文件) • [技术栈](#-技术栈) • [文档](#-相关文档)
+
+---
+
+### 🎯 项目展示
+
+<img src="docs/images/screenshot.png" alt="PDF2MD-V2 界面展示" width="800">
+
+</div>
 
 ## 📁 目录结构
 
